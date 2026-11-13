@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'model-router is on. Route every coding request through the menu below.'; cat \"${CLAUDE_PLUGIN_ROOT}\"/skills/model-router/SKILL.md"
+          }
+        ]
+      }
+    ]
+  }
+}

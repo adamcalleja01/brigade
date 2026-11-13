@@ -1,0 +1,9 @@
+{
+  "name": "model-router",
+  "version": "1.0.0",
+  "description": "Routes each coding job to the right model: Fable plans, Sonnet builds, Opus handles auth and nasty bugs, Haiku does the grunt work. Nine subagents, each pinned to its model and effort.",
+  "author": { "name": "Adam Calleja" },
+  "repository": "https://github.com/adamcalleja01/model-router",
+  "license": "MIT",
+  "keywords": ["subagents", "model-routing", "cost", "effort", "codex"]
+}
