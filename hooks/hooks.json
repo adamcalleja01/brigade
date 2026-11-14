@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo 'brigade is on. Route every coding request through the menu below.'; cat \"${CLAUDE_PLUGIN_ROOT}\"/skills/brigade/SKILL.md"
+            "command": "echo 'brigade is on. You are the commander: deploy every coding mission to its unit on the roster below.'; cat \"${CLAUDE_PLUGIN_ROOT}\"/skills/brigade/SKILL.md"
           }
         ]
       }

@@ -1,12 +1,14 @@
 {
   "name": "brigade",
-  "description": "Pick the cook by the order, not by the brand.",
-  "owner": { "name": "Adam Calleja" },
+  "description": "Assign the unit by the mission, not by rank.",
+  "owner": {
+    "name": "Adam Calleja"
+  },
   "plugins": [
     {
       "name": "brigade",
       "source": "./",
-      "description": "Routes each coding job to a subagent pinned to the right model and effort."
+      "description": "Deploys each coding job to a subagent locked to the right model and effort."
     }
   ]
 }

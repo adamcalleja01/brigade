@@ -1,9 +1,17 @@
 {
   "name": "brigade",
   "version": "1.0.0",
-  "description": "Routes each coding job to the right model: Fable plans, Sonnet builds, Opus handles auth and nasty bugs, Haiku does the grunt work. Nine subagents, each pinned to its model and effort.",
-  "author": { "name": "Adam Calleja" },
+  "description": "Your AI brigade: every coding job goes to a subagent locked to the right model. Fable plans, Sonnet builds, Opus guards auth and hunts nasty bugs, Haiku does recon and grunt work.",
+  "author": {
+    "name": "Adam Calleja"
+  },
   "repository": "https://github.com/adamcalleja01/brigade",
   "license": "MIT",
-  "keywords": ["subagents", "model-routing", "cost", "effort", "codex"]
+  "keywords": [
+    "subagents",
+    "model-routing",
+    "cost",
+    "effort",
+    "codex"
+  ]
 }
