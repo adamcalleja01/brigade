@@ -1,9 +1,9 @@
 ---
-name: model-router
+name: brigade
 description: Use when a coding request involves planning, building, UI, auth or payments, searching code, renames, boilerplate, tests, a hard bug, a security audit or a code review, or when choosing which Claude or Codex model and effort level should handle a job.
 ---
 
-# Model Router
+# Brigade
 
 You wouldn't send the head chef to chop carrots. Pick the cook by the order, not by the brand.
 
@@ -30,7 +30,7 @@ Each cook's model and effort are pinned in its agent file. Don't override them w
 
 1. Split the request into jobs from the menu. A job that isn't on the menu goes to the closest row.
 2. Dispatch each job to its cook:
-   - **Claude Code:** the Agent tool with `subagent_type: "model-router:<cook>"` (just `"<cook>"` if the agents were copied into `~/.claude/agents/`).
+   - **Claude Code:** the Agent tool with `subagent_type: "brigade:<cook>"` (just `"<cook>"` if the agents were copied into `~/.claude/agents/`).
    - **Codex:** spawn the agent named `<cook>`.
 3. Write a brief that stands on its own, because the cook can't see this conversation: the goal, the files and paths, the constraints, what done looks like, and what to send back.
 4. Run independent jobs in parallel. Run dependent jobs in order: `planner` → `builder` / `frontend` / `auth-payments` → `test-writer` → `reviewer`.

@@ -1,8 +1,8 @@
-# model-router
+# brigade
 
 > You wouldn't send the head chef to chop carrots. So why is your top AI model renaming variables?
 
-model-router turns your coding agent into a kitchen. Your main chat becomes the expediter: it splits each request into jobs and hands each job to a cook, a subagent locked to the right model and effort level. You never switch models by hand.
+Brigade turns your coding agent into a kitchen. Your main chat becomes the expediter: it splits each request into jobs and hands each job to a cook, a subagent locked to the right model and effort level. You never switch models by hand.
 
 Works in **Claude Code** (as a plugin) and **Codex** (as a skill plus custom agents).
 
@@ -42,8 +42,8 @@ The rules the main chat follows:
 ### Claude Code
 
 ```bash
-claude plugin marketplace add adamcalleja01/model-router
-claude plugin install model-router@model-router
+claude plugin marketplace add adamcalleja01/brigade
+claude plugin install brigade@brigade
 ```
 
 Start a new session. The menu loads automatically at the start of every session.
@@ -55,16 +55,16 @@ The Claude Code cooks use the short model names (`fable`, `opus`, `sonnet`, `hai
 ### Codex
 
 ```bash
-git clone https://github.com/adamcalleja01/model-router /tmp/model-router
+git clone https://github.com/adamcalleja01/brigade /tmp/brigade
 mkdir -p ~/.codex/agents ~/.agents/skills
-cp /tmp/model-router/codex/agents/*.toml ~/.codex/agents/
-cp -r /tmp/model-router/skills/model-router ~/.agents/skills/
+cp /tmp/brigade/codex/agents/*.toml ~/.codex/agents/
+cp -r /tmp/brigade/skills/brigade ~/.agents/skills/
 ```
 
 Codex only spawns subagents when asked, so to make routing automatic, add this line to `~/.codex/AGENTS.md`:
 
 ```
-For coding requests, use the model-router skill.
+For coding requests, use the brigade skill.
 ```
 
 Codex cooks name exact models. When new ones ship, update `model` in `codex/agents/*.toml`.

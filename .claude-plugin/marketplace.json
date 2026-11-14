@@ -1,10 +1,10 @@
 {
-  "name": "model-router",
+  "name": "brigade",
   "description": "Pick the cook by the order, not by the brand.",
   "owner": { "name": "Adam Calleja" },
   "plugins": [
     {
-      "name": "model-router",
+      "name": "brigade",
       "source": "./",
       "description": "Routes each coding job to a subagent pinned to the right model and effort."
     }
